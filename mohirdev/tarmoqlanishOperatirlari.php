@@ -52,49 +52,49 @@ $yosh1 = 99;
 //     echo "Hafta kuni sonini noto'g'ri kiritdingiz";
 // }
 
-// //switch case
-// $kun1 = 5;
-// switch ($kun1) {
-//     case 1:
-//         echo "Dushanba";
-//         break;
-//     case 2:
-//         echo "Seshanba";
-//         break;
-//     case 3:
-//         echo "Chorshanba";
-//         break;
-//     case 4:
-//         echo "Payshanba";
-//         break;
-//     case 5:
-//         $title = "Bugun soat 13:00 da JUMA namozi o'qiladi \n";
-//         echo "Juma" . $title;
-//         break;
-//     case 6:
-//         echo "Shanba";
-//         break;
-//     case 7:
-//         echo "Yakshanab";
-//         break;
+//switch case
+$kun1 = 5;
+switch ($kun1) {
+    case 1:
+        echo "Dushanba";
+        break;
+    case 2:
+        echo "Seshanba";
+        break;
+    case 3:
+        echo "Chorshanba";
+        break;
+    case 4:
+        echo "Payshanba";
+        break;
+    case 5:
+        $title = "Bugun soat 13:00 da JUMA namozi o'qiladi \n";
+        echo "Juma" . $title;
+        break;
+    case 6:
+        echo "Shanba";
+        break;
+    case 7:
+        echo "Yakshanab";
+        break;
 
-//     default:
-//         echo "Hafta kuni raqamini to'g'ri belgilang";
-//         break;
-// }
+    default:
+        echo "Hafta kuni raqamini to'g'ri belgilang";
+        break;
+}
 
-// //MATCH
+// MATCH
 
-// $return_value = match($kun1){
-//     1=> "Dushanba",
-//     2=> "Seshanba",
-//     3=> "Chorshanba",
-//     4=> "Payshanba",
-//     5=> "Juma",
-//     6=> "Shanba",
-//     7=> "Yaskshanba",
-// };
-// var_dump($return_value);
+$return_value = match($kun1){
+    1=> "Dushanba",
+    2=> "Seshanba",
+    3=> "Chorshanba",
+    4=> "Payshanba",
+    5=> "Juma" . $title, $title=" Bugun juma namozi 13 00da o'qiladi ",
+    6=> "Shanba",
+    7=> "Yaskshanba",
+};
+var_dump($return_value);
 
 
 $son = 0;

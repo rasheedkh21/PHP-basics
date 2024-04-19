@@ -186,7 +186,6 @@ if (isset($_POST['number1']) && isset($_POST['number2'])) {
 
         <input type="text" name="result"value="<?php echo isset($result) ? $result : ''; ?>">
         <label for="result"> Result </label> <br><br>
-
         <div>
             <input type="submit" name="add" id="add" value="Add">
             <input type="submit" name="minus" id="minus" value="Minus">
@@ -197,6 +196,4 @@ if (isset($_POST['number1']) && isset($_POST['number2'])) {
 
     <?php 
     // 6 - 7 -8 masalalarni ishlab qoyaman
-
-    $input
     ?>

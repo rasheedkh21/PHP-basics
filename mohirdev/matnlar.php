@@ -1,31 +1,31 @@
 <?php
-// $text = "sardor";
-//index   0 1 2 3 4 5
-//string  s a r d o r
+$text = "sardor";
+// index   0 1 2 3 4 5
+// string  s a r d o r
 
-// echo $text[2]; //r
+echo $text[2]; //r
 
 
 //strlen matndagi baytlar sonini hisoblab beradi matn uzunligini emas 
-// $str = 'absdfefghjklmn';
-// echo strlen($str). "\n";
+$str = 'absdfefghjklmn';
+echo strlen($str). "\n";
 
-// echo strtoupper($str). "\n";
-// echo ucfirst($str);
+echo strtoupper($str). "\n";
+echo ucfirst($str);
 
 //substr matnda berilgan positsiyadan boshlab ,kerakli moqdorda belgini olish.
 
 // .  1 2 3 4 5 6
 //    s a r d o r 
 // . -6-5-4-3-2-1
-// echo substr("sardoroga", 1); //ardoroga
-// echo substr("sardoroga", -1); //a
+echo substr("sardoroga", 1); //ardoroga
+echo substr("sardoroga", -1); //a
 
 
 //strpos matndan qidirilayongan qiymatni positsiyasini aniqlaydi
-// $mystring = " abdurashid bozorov";
-// $findme = "u";
-// echo strpos($mystring, $findme); // 4
+$mystring = " abdurashid bozorov";
+$findme = "u";
+echo strpos($mystring, $findme); // 4
 
 // echo strrpos($mystring, "bozorov" );
 
@@ -70,18 +70,18 @@
 // $text = "Salom Dunyo";
 // echo "$text \n";
 
-// //2-masala
-// $text1 = "Salom,";
-// $text2 = "Dunyo!";
+//2-masala
+$text1 = "Salom,";
+$text2 = "Dunyo!";
 
-// echo ($text1 . $text2 . "\n ");
+echo ($text1 . $text2 . "\n ");
 
-// //3-masala
-// $ism = "Abdurashid";
-// $hardfan_iborat = str_word_count($ism);
+//3-masala
+$ism = "Abdurashid";
+$hardfan_iborat = str_word_count($ism);
 
-// echo($ism. "-" . $hardfan_iborat."ta harfdan iborat");  
-//4-masala
+echo($ism. "-" . $hardfan_iborat."ta harfdan iborat");  
+// 4-masala
 
 $ism = "Abdurashid";
 echo substr($ism, 6 );
