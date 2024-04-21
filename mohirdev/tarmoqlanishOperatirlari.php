@@ -2,55 +2,55 @@
 //1chi usul  holati faqat True holatda ish bajarsin
 $yosh = 0;
 
-// if($yosh == 18){
-//     echo "Siz 18 yoshda emassiz";
-// }
-// if(($yosh >= 18) &&($yosh <=40)){
-//     echo "Siz qirchillama yoshdasiz";
-// }
+if($yosh == 18){
+    echo "Siz 18 yoshda emassiz";
+}
+if(($yosh >= 18) &&($yosh <=40)){
+    echo "Siz qirchillama yoshdasiz";
+}
 
 
-//2- usul holati agar true bolsa bu ishni false bolsa boshqa ishni bajarishi kerak.
+// 2- usul holati agar true bolsa bu ishni false bolsa boshqa ishni bajarishi kerak.
 
-// if(($yosh >= 18) &&($yosh <=40)){
-//     echo "Siz qirchillama yoshdasiz";
-// }else{
-//     echo "Bratim davriz tugapti-ku";
-// }
+if(($yosh >= 18) &&($yosh <=40)){
+    echo "Siz qirchillama yoshdasiz";
+}else{
+    echo "Bratim davriz tugapti-ku";
+}
 
 
 //3chi usul holati 
 $yosh1 = 99;
-// if (($yosh1>= 18)&&($yosh1 <= 40)) {
-//     echo ("Siz biz uchun to'ri kelasiz");
-// } elseif (($yosh1<=18)&& ($yosh1 >=0)) {
-//     echo ("Biz uchun yoshlik qilasiz");
-// } else {
-//     echo ("Davriz o'tibdi-ku bratim");
-// }
+if (($yosh1>= 18)&&($yosh1 <= 40)) {
+    echo ("Siz biz uchun to'ri kelasiz");
+} elseif (($yosh1<=18)&& ($yosh1 >=0)) {
+    echo ("Biz uchun yoshlik qilasiz");
+} else {
+    echo ("Davriz o'tibdi-ku bratim");
+}
 
 
 //MASALA if elseif else VA swich case 
 
-// $kun = 1;
-// //if elseif else
-// if ($kun == 1) {
-//     echo "Dushanba";
-// } elseif ($kun == 2) {
-//     echo "Seshnaba";
-// } elseif ($kun == 3) {
-//     echo "Chorshanba";
-// } elseif ($kun == 4) {
-//     echo "Payshanba";
-// } elseif ($kun == 5) {
-//     echo "Juma";
-// } elseif ($kun == 6) {
-//     echo "Shanba";
-// } elseif ($kun == 7) {
-//     echo "Yakshabna";
-// } else {
-//     echo "Hafta kuni sonini noto'g'ri kiritdingiz";
-// }
+$kun = 1;
+//if elseif else
+if ($kun == 1) {
+    echo "Dushanba";
+} elseif ($kun == 2) {
+    echo "Seshnaba";
+} elseif ($kun == 3) {
+    echo "Chorshanba";
+} elseif ($kun == 4) {
+    echo "Payshanba";
+} elseif ($kun == 5) {
+    echo "Juma";
+} elseif ($kun == 6) {
+    echo "Shanba";
+} elseif ($kun == 7) {
+    echo "Yakshabna";
+} else {
+    echo "Hafta kuni sonini noto'g'ri kiritdingiz";
+}
 
 //switch case
 $kun1 = 5;
@@ -199,11 +199,11 @@ else
     echo "shart 3";
 
 
-// $x= '';
-// if ($x==0) 
-//     print "true";
-// else print "false";
-//  print "true";
+$x= '';
+if ($x==0) 
+    print "true";
+else print "false";
+ print "true";
 
 
 $b = "1";
@@ -216,13 +216,13 @@ switch ($b) {
         print "default"; //string 1 default 
 }
 
-//  $x = 10;
-//  $y=20;
-//  if ($x>$y+$y != 3) {
-//     print "true";
-//  } else {
-//     print"false";
-//  } //true
+ $x = 10;
+ $y=20;
+ if ($x>$y+$y != 3) {
+    print "true";
+ } else {
+    print"false";
+ } //true
 
 
 

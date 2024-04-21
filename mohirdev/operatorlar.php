@@ -4,147 +4,145 @@
 // $x = 5;
 $y = 5;
 
-// echo $x + $y . "<br/>"; 
-// echo $x - $y. "<br/>"; 
-// echo $x / $y. "<br/>"; 
-// echo $x * $y. "<br/>"; 
-// echo $x ** $y. "<br/>"; ;
-// echo $x % $y. "<br/>"; 
+echo $x + $y . "<br/>"; 
+echo $x - $y. "<br/>"; 
+echo $x / $y. "<br/>"; 
+echo $x * $y. "<br/>"; 
+echo $x ** $y. "<br/>"; ;
+echo $x % $y. "<br/>"; 
 
 
-//O'zlashtirish Operatorlar
-// $x = $y;
-// $x += $y; //$x= $x+$y
-// $x /= $y; //$x= $x+$y
-// $x *= $y; //$x= $x+$y
+// O'zlashtirish Operatorlar
+$x = $y;
+$x += $y; //$x= $x+$y
+$x /= $y; //$x= $x+$y
+$x *= $y; //$x= $x+$y
 
-// echo $x;
+echo $x;
 
-//pass the argumnet by reference
-// $a = 5;
-// $b = &$a;
+// pass the argumnet by reference
+$a = 5;
+$b = &$a;
 
-// echo $b;
+echo $b;
 
-//increment decrement operators
+// increment decrement operators
 
-// $x = 5;
-// echo $x++;
-// echo '<br/>';
-// echo $x;
-
-
-// echo ++$x;
-// echo '<br/>';
-// echo $x+5;
-
-// $a =99;
-// $b = 9;
-// $c = 8;
-
-// $c = $a++ / $b++ + --$c;
-// echo $c;
+$x = 5;
+echo $x++;
+echo '<br/>';
+echo $x;
 
 
-//taqqoslash operatorlari
+echo ++$x;
+echo '<br/>';
+echo $x+5;
 
-// $x= 5;
-// $y= 4;
+$a =99;
+$b = 9;
+$c = 8;
 
-// var_dump($x != $y);
-// var_dump($x <=> $y);
-
-
-// $a = 10;
-// echo $a==15 ? "salom" : "hayr"; //natiha xayr 
-
-
-// $score = 5;
-
-// echo ($score > 4) ? 'good' : 'bad';
-
-// $month = false;
-// echo $month ?? 3; 
+$c = $a++ / $b++ + --$c;
+echo $c;
 
 
-//teskari sanoq
-// $a = 784;
-// $A = $a%10;
-// $B = $a% 100;
-// $C = ($B - $A)/10;
-// $D = ($a - $B)/100;
-// echo $A. $C .$D;
+// taqqoslash operatorlari
+
+$x= 5;
+$y= 4;
+
+var_dump($x != $y);
+var_dump($x <=> $y);
+
+
+$a = 10;
+echo $a==15 ? "salom" : "hayr"; //natiha xayr 
+
+
+$score = 5;
+
+echo ($score > 4) ? 'good' : 'bad';
+
+$month = false;
+echo $month ?? 3; 
+
+
+// teskari sanoq
+$a = 784;
+$A = $a%10;
+$B = $a% 100;
+$C = ($B - $A)/10;
+$D = ($a - $B)/100;
+echo $A. $C .$D;
 
 //mantiqiy shart operatorlar
+$b = 12;
+ echo  ($b>0) && ($b <10) ? 
+ "$b - 0 va 10 orasida joylashgan" : "$b - 0 va 10 orasida joylashmagan";
 
 
-// $b = 12;
-//  echo  ($b>0) && ($b <10) ? 
-//  "$b - 0 va 10 orasida joylashgan" : "$b - 0 va 10 orasida joylashmagan";
+$b = 94;
+ if  (($b>100) || ($b <10)){
+    echo "$b -  10 sonidan sonidan katta";
+ } else {
+    echo "$b -  100 sonidan kichkina";
+ }
+$c = 12;
+
+echo ($c%2 == 1) ? " A toq son" :" A juft son";
 
 
-// $b = 94;
-//  if  (($b>100) || ($b <10)){
-//     echo "$b -  10 sonidan sonidan katta";
-//  } else {
-//     echo "$b -  100 sonidan kichkina";
-//  }
-// $c = 12;
+$a = 2;
+$b = 12;
+echo ($b % 2 == 1 || $a % 2 == 1) ? " A va B sonlarininng kamida bittasi toq" : " A va B sinlarning ikkalasi ham juft";
 
-// echo ($c%2 == 1) ? " A toq son" :" A juft son";
+//1-masala
+$son = 21;
+echo "$son <br/>";
 
+//2-masala
+$x=10;
+$y=15;
 
-// $a = 2;
-// $b = 12;
-// echo ($b % 2 == 1 || $a % 2 == 1) ? " A va B sonlarininng kamida bittasi toq" : " A va B sinlarning ikkalasi ham juft";
+echo "x=$x " . "y=$y <br/>";
 
-// //1-masala
-// $son = 21;
-// echo "$son <br/>";
+//3-masala
+$x = 10;
+$y= 15;
+$z = $x+$y;
 
-// //2-masala
-// $x=10;
-// $y=15;
+echo "$z <br/>";
 
-// echo "x=$x " . "y=$y <br/>";
-
-// //3-masala
-// $x = 10;
-// $y= 15;
-// $z = $x+$y;
-
-// echo "$z <br/>";
-
-// //4-masala
-// $a =2;
-// $b =3;
-// echo $a+$b;
-// echo "<br/>";
-// echo $a-$b;
-// echo "<br/>";
-// echo $a*$b;
-// echo "<br/>";
-// echo $a/$b;
-// echo "<br/>";
-// //5-masala
-// $a =10;
-// $b =15;
-// $c=20;
-// echo $a+$b+$c;
-// echo "<br/>";
-// echo $a-$b+$c;
-// echo "<br/>";
-// echo $a*$b+$c;
-// echo "<br/>";
-// echo $a/$b+$c;
-// echo "<br/>";
+//4-masala
+$a =2;
+$b =3;
+echo $a+$b;
+echo "<br/>";
+echo $a-$b;
+echo "<br/>";
+echo $a*$b;
+echo "<br/>";
+echo $a/$b;
+echo "<br/>";
+//5-masala
+$a =10;
+$b =15;
+$c=20;
+echo $a+$b+$c;
+echo "<br/>";
+echo $a-$b+$c;
+echo "<br/>";
+echo $a*$b+$c;
+echo "<br/>";
+echo $a/$b+$c;
+echo "<br/>";
 
 
-// //6-masala
-// $v=18;
-// $e =5;
-// echo $v%$e;
-// echo "<br/>";
+//6-masala
+$v=18;
+$e =5;
+echo $v%$e;
+echo "<br/>";
 
 
 //7-masala
