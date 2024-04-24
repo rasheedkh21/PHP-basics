@@ -1,160 +1,160 @@
 <?php
 //while operatori har doim shart bajargandan keyin oziga qaytadi va tekshiradi qachonki shart bajarilib tugasa keyin boshqa elementga o'tadi 
-// $x = 1;
-// while ($x <= 5) {
-//     echo "x = $x <br>";
-//     $x++;
-// }
+$x = 1;
+while ($x <= 5) {
+    echo "x = $x <br>";
+    $x++;
+}
 
-// $chelak = 3;
-// $bochka = 100;
-// $suv = 0;
-// $hisoblovchi = 0;
-// while ($suv < $bochka) {
-//     $suv = $suv + $chelak;
-//     echo " bochkadagi suv $suv litr <br>";
-//     $hisoblovchi++;
+$chelak = 3;
+$bochka = 100;
+$suv = 0;
+$hisoblovchi = 0;
+while ($suv < $bochka) {
+    $suv = $suv + $chelak;
+    echo " bochkadagi suv $suv litr <br>";
+    $hisoblovchi++;
 
-// }
-// echo $hisoblovchi;
+}
+echo $hisoblovchi;
 
-// //while ichida while lar 
+//while ichida while lar 
 
-// $i = 1;
-// while ($i <= 3) {
-//     $j = 1;
-//     while ($j <= 30) {
-//         echo " $i $j <br>";
-//         $j++;
-//     }
-//     $i++;
-// }
+$i = 1;
+while ($i <= 3) {
+    $j = 1;
+    while ($j <= 30) {
+        echo " $i $j <br>";
+        $j++;
+    }
+    $i++;
+}
 
 
-// //do while 
-// $a = 1;
+//do while 
+$a = 1;
 
-// do {
-//     echo "a = $a <br>";
-//     $a++;
-// } while ($a <= 10);
+do {
+    echo "a = $a <br>";
+    $a++;
+} while ($a <= 10);
 
-// //masala
-// $s = 0;
-// $i = 1;
-// $n = 100;
-// do {
-//     $s = $s + $i;
-//     $i++;
-// } while ($i <= 100);
+//masala
+$s = 0;
+$i = 1;
+$n = 100;
+do {
+    $s = $s + $i;
+    $i++;
+} while ($i <= 100);
 
 // echo "1 dan $n gacha boldan sonlar yigindisi $s <br>";
 
-// while ($i <= 100) {
-//     $s = $s + $i;
-//     $i++;
-// }
-// echo $s . "<br>";
+while ($i <= 100) {
+    $s = $s + $i;
+    $i++;
+}
+echo $s . "<br>";
 
-// //for loop (sikli haqida)
-// for ($i = 1; $i <= 9; $i++) {
-//     echo " bu hozir $i <br> gacha hisobladi <br>";
-// }
-//shart yoqlik varianti 
+// for loop (sikli haqida)
+for ($i = 1; $i <= 9; $i++) {
+    echo " bu hozir $i <br> gacha hisobladi <br>";
+}
+// shart yoqlik varianti 
 
-// for ($i=1; ; $i++) { 
-//     if ($i >10) {
-//         break;
-//     }
-//     echo($i . "<br>");
-// }
+for ($i=1; ; $i++) { 
+    if ($i >10) {
+        break;
+    }
+    echo($i . "<br>");
+}
 
 //boshlangich qiymat tepada berib hech qanday shart berilmaydigan holati 
 
-// $i = 1;
-// for (;  ; ) { 
-//     if ($i>10) {
-//         break; 
-//     }
-//     echo($i);
-//     echo $i++;
-// }
+$i = 1;
+for (;  ; ) { 
+    if ($i>10) {
+        break; 
+    }
+    echo($i);
+    echo $i++;
+}
 
-// //mashxur misol
-// // * hosil qilish
-// for ($i = 1; $i <= 5; $i++) {
-//     for ($j = 1; $j <= $i; $j++) {
-//         echo "*";
-//     }
-//     echo "<br>";
-// }
+//mashxur misol
+// * hosil qilish
+for ($i = 1; $i <= 5; $i++) {
+    for ($j = 1; $j <= $i; $j++) {
+        echo "*";
+    }
+    echo "<br>";
+}
 
-// //1dan 10gacha soanlar yigindisini hisoblash
-// $sum = 0;
-// for ($i = 1; $i <= 10; $i++) {
-//     $sum += $i;
-// }
-// echo $sum . "<br>";
+//1dan 10gacha soanlar yigindisini hisoblash
+$sum = 0;
+for ($i = 1; $i <= 10; $i++) {
+    $sum += $i;
+}
+echo $sum . "<br>";
 
-// //1dan 20gacha barcha toq sonlarni  chiqarish
+//1dan 20gacha barcha toq sonlarni  chiqarish
 
-// for ($i = 0; $i < 20; $i++) {
-//     if ($i % 2 == 0) {
-//         continue;
-//     }
-//     echo $i . "<br>";
-// }
+for ($i = 0; $i < 20; $i++) {
+    if ($i % 2 == 0) {
+        continue;
+    }
+    echo $i . "<br>";
+}
 
-// //masalalar 
-// //1-masala
-// $sanoq_boshi = 1;
-// $sanoq_oxiri = 100;
-// $sum = 0;
-// while ($sanoq_boshi <= $sanoq_oxiri) {
-//     $sum = $sum + $sanoq_boshi;
-//     $sanoq_boshi++;
-// }
-// echo $sum . "<br>";
+//masalalar 
+//1-masala
+$sanoq_boshi = 1;
+$sanoq_oxiri = 100;
+$sum = 0;
+while ($sanoq_boshi <= $sanoq_oxiri) {
+    $sum = $sum + $sanoq_boshi;
+    $sanoq_boshi++;
+}
+echo $sum . "<br>";
 
-// //2-masala 
-// $count = 0;
-// while ($count < 16) {
-//     echo "* ";
-//     $count++;
-// }
-// //3-masala
-// function factorial($N) {
-//     if ($N < 0) {
-//         return "Manfiy sonning faktoriali mavjud emas";
-//     } elseif ($N == 0 || $N == 1) {
-//         return 1;
-//     } else {
-//         $result = 1;
-//         $i = 2;
-//         do {
-//             $result *= $i;
-//             $i++;
-//         } while ($i <= $N);
-//         return $result;
-//     }
-// }
+//2-masala 
+$count = 0;
+while ($count < 16) {
+    echo "* ";
+    $count++;
+}
+//3-masala
+function factorial($N) {
+    if ($N < 0) {
+        return "Manfiy sonning faktoriali mavjud emas";
+    } elseif ($N == 0 || $N == 1) {
+        return 1;
+    } else {
+        $result = 1;
+        $i = 2;
+        do {
+            $result *= $i;
+            $i++;
+        } while ($i <= $N);
+        return $result;
+    }
+}
 
-// $N = 5; 
-// echo "$N faktoriali: " . factorial($N) ."<br>";
+$N = 5; 
+echo "$N faktoriali: " . factorial($N) ."<br>";
 
-// //4-masala 
-// function kopaytirish_jadvali($number){
-//     $i=1;
-//     do {
-//         $result = $number * $i;
-//         echo "$number x $i = $result <br>";
-//         $i++;
-//     } while ($i <= 10);
-// }
-// kopaytirish_jadvali(9);
-// kopaytirish_jadvali(8);
+//4-masala 
+function kopaytirish_jadvali($number){
+    $i=1;
+    do {
+        $result = $number * $i;
+        echo "$number x $i = $result <br>";
+        $i++;
+    } while ($i <= 10);
+}
+kopaytirish_jadvali(9);
+kopaytirish_jadvali(8);
 
-// //5-masala
+//5-masala
 
 //forga doir masalalar 
 //1-masala 
