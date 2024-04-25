@@ -100,24 +100,24 @@ $monthDays["year"] = 2022;
 var_dump($monthDays) . "<br>";
 
 
-// $array = array(
-//     1 => "a",
-//     // php da true bolsa 1 false bolsa 0 deb hisoblab ketadi shuning uchun yana 
-//     // qaytadan  1chi index qiymatini beradi natijada "d" boladi
-//     true => "d",
-//     // butun qismini oladi va tepadagi 2ta qiymatni emas "c" qiymatni oladi
-//     1.5 => "c",
-//     "1" => "b",
-// );
-// echo $array();
+$array = array(
+    1 => "a",
+    // php da true bolsa 1 false bolsa 0 deb hisoblab ketadi shuning uchun yana 
+    // qaytadan  1chi index qiymatini beradi natijada "d" boladi
+    true => "d",
+    // butun qismini oladi va tepadagi 2ta qiymatni emas "c" qiymatni oladi
+    1.5 => "c",
+    "1" => "b",
+);
+echo $array();
 
-//massivlarga doir masalalar
-// $numbers = [1,2,3,4,5,6];
-// $sum = 1;
-// for ($i= 0; $i < count($numbers); $i++) {
-//     $sum = $sum * $numbers [$i];
-// }
-// echo $sum;
+// massivlarga doir masalalar
+$numbers = [1,2,3,4,5,6];
+$sum = 1;
+for ($i= 0; $i < count($numbers); $i++) {
+    $sum = $sum * $numbers [$i];
+}
+echo $sum;
 
 //          0  1  2  3  4  5  6  7  8 
 $numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9,10];
