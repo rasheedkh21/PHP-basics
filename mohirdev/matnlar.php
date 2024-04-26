@@ -49,26 +49,26 @@ echo strpos($mystring, $findme); // 4
 
 // htmlspecialchars() -- html belgilarni HTML entityga almashtiradi.
 
-// $convert = "<li><a href=index.php>Phpni o'rganamiz</a></li>";
+$convert = "<li><a href=index.php>Phpni o'rganamiz</a></li>";
 
-// echo "Orginal : " .$convert;
-// echo htmlspecialchars($convert);
+echo "Orginal : " .$convert;
+echo htmlspecialchars($convert);
 
-//strip_tags() -- mantndan html taglarni olib tashlaydi.
+// strip_tags() -- mantndan html taglarni olib tashlaydi.
 
-// $convert ="<b><a href='index.php'>PHPni o'rganamiz </a></b> ";
-// // echo $convert;
-// echo strip_tags($convert , allowed_tags:"<b>");
+$convert ="<b><a href='index.php'>PHPni o'rganamiz </a></b> ";
+// echo $convert;
+echo strip_tags($convert , allowed_tags:"<b>");
 
-//substr_count -- matndda qidirilayontgan so'z matnda nechta joyda borligini aniqlaydi
+// substr_count -- matndda qidirilayontgan so'z matnda nechta joyda borligini aniqlaydi
 
 // $str = "Bugun mening kunim hechkim kunim bo'la olmaydi";
 
 // echo substr_count(($str), needle:"kunim", offset:18 ."\n");
-// //needle kerakli so'z, offset qayedan yani nechinchi indexdan keyin qidirish
+// needle kerakli so'z, offset qayedan yani nechinchi indexdan keyin qidirish
 
-// $text = "Salom Dunyo";
-// echo "$text \n";
+$text = "Salom Dunyo";
+echo "$text \n";
 
 //2-masala
 $text1 = "Salom,";
@@ -90,5 +90,78 @@ echo substr($ism, 6 );
 
 $str = "Bugun havo yaxshi";
 $soz =  strpos($str,"havo");
-
 echo "Qidirilgan so'z {$soz}chi indexdan boshlanadi <br/>";
+ 
+
+//6-masala
+$data = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+// Parol hosil qilish
+$password = substr(str_shuffle($data), 0, 8);
+
+echo "8 xonali parol: $password <br>";
+
+//7-masala
+
+$string = 'Assalomu aleykum Ozbekiston.';
+$replacement = 'jonajon ';
+
+echo substr_replace($string, $replacement, 17, 0). "<br>";
+
+//8-masala
+$email = "example@gmail.com";
+$domen = substr($email, strpos($email, '@') + 1);
+echo $domen;
+echo "<br>";
+
+//9-masala
+$son = '000346023.24';
+$sliceed_num = substr($son, strpos($son, '3'));
+
+
+
+//10-masala
+$url = "https://kun.uz/50487176";
+$raqam = substr($url, strrpos($url, '/') + 1);
+
+echo $raqam. "<br>";
+
+//11-masala
+$path = "/Users/sardordushamov/darslar/kurs/index.php";
+
+// Fayl nomini ajratish
+$file = substr(strrchr($path, '/'), 1);
+
+echo $file;
+
+//12-masala
+function telefonNomeriniTekshirish($raqam) {
+    // Matn uzunligi tekshirish
+    if(strlen($raqam) != 12) {
+        return "Natija: Telefon raqami emas";
+    }
+    
+    // Matndagi barcha belgilar raqam bo'lishini tekshirish
+    $index = 0;
+    while($index < strlen($raqam)) {
+        if(!is_numeric($raqam[$index])) {
+            return "Natija: Telefon raqami emas";
+        }
+        $index++;
+    }
+
+    // Agar raqam +998 bilan boshlanmasa
+    if(substr($raqam, 0, 4) !== "+998") {
+        return "Natija: Telefon raqami emas";
+    }
+
+    // Agar barcha shartlar qanoatlansa, telefon raqamini qaytarish
+    return "Natija: Telefon raqami";
+}
+
+// Test qilish
+$raqam1 = "+998999999999";
+$raqam2 = "+99899999999912";
+
+echo telefonNomeriniTekshirish($raqam1). "<br>"; // Natija: Telefon raqami
+echo telefonNomeriniTekshirish($raqam2); // Natija: Telefon raqami emas
