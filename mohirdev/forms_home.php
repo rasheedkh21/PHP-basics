@@ -23,17 +23,22 @@ if (
         <input type="submit">
     </form>
 </div> <br>
- 
+
 <?php
 //2- masala
-if (isset($_POST['number1']) && !empty($_POST['number2'])) {
+if (isset($_POST['number1']) && isset($_POST['number2'])) {
     $number1 = $_POST['number1'];
     $number2 = $_POST['number2'];
 
-    $sum = $number1 + $number2;
-    echo "Kiritilgan sonlarning yig'indisi: $sum";
+    if (is_numeric($number1) && is_numeric($number2)) {
+        $sum = $number1 + $number2;
+        echo "Kiritilgan sonlarning yig'indisi: $sum";
+    } else {
+        echo "Faqat sonlarni kirgizing!";
+    }
+} else {
+    echo "Iltimos, sonlarni kiriting!";
 }
-
 
 ?>
 
@@ -53,7 +58,7 @@ if (isset($_POST['number1']) && !empty($_POST['number2'])) {
 //3-masala
 if (isset($_POST['number']) && !empty($_POST['number'])) {
 
-    $number= $_POST['number'];
+    $number = $_POST['number'];
     switch ($number) {
         case 1:
             echo 'Dushanba';
@@ -86,22 +91,22 @@ if (isset($_POST['number']) && !empty($_POST['number'])) {
 <form action="" method="post">
     <label for="number1">Sonni kiriting :</label>
     <input type="number" id="number" name="number" required><br>
-     <button type="submit">Hafta kunini
-    aniqlash</button>
-<br>
+    <button type="submit">Hafta kunini
+        aniqlash</button>
+    <br>
 </form>
 
 
-<?php 
+<?php
 //4-masala
-if (isset($_POST['number1']) && !empty($_POST['number2']))  {
-  
+if (isset($_POST['number1']) && !isset($_POST['number2']) && !empty($_POST['number1']) && !empty($_POST['number2'])) {
+
     $number1 = $_POST['number1'];
     $number2 = $_POST['number2'];
-    
+
 
     $operator = $_POST['operator'];
-    
+
 
     switch ($operator) {
         case 'add':
@@ -125,40 +130,40 @@ if (isset($_POST['number1']) && !empty($_POST['number2']))  {
             $result = "Noto'g'ri operator tanlandi";
             break;
     }
-    
+
     // Natijani chiqarish
     echo "Natija: $result";
 }
 ?>
- <form action="" method="post">
-        <label for="number1">Birinchi son:</label>
-        <input type="number" id="number1" name="number1" required><br><br>
-        
-        <label for="number2">Ikkinchi son:</label>
-        <input type="number" id="number2" name="number2" required><br><br>
-        
-        <input type="radio" id="add" name="operator" value="add">
-        <label for="add">+</label>
-        
-        <input type="radio" id="subtract" name="operator" value="subtract">
-        <label for="subtract">-</label>
-        
-        <input type="radio" id="multiply" name="operator" value="multiply">
-        <label for="multiply">*</label>
-        
-        <input type="radio" id="divide" name="operator" value="divide">
-        <label for="divide">/</label><br><br>
-        
-        <button type="submit">Hisoblash</button>
-    </form>
+<form action="" method="post">
+    <label for="number1">Birinchi son:</label>
+    <input type="number" id="number1" name="number1" required><br><br>
 
-    <?php 
+    <label for="number2">Ikkinchi son:</label>
+    <input type="number" id="number2" name="number2" required><br><br>
+
+    <input type="radio" id="add" name="operator" value="add">
+    <label for="add">+</label>
+
+    <input type="radio" id="subtract" name="operator" value="subtract">
+    <label for="subtract">-</label>
+
+    <input type="radio" id="multiply" name="operator" value="multiply">
+    <label for="multiply">*</label>
+
+    <input type="radio" id="divide" name="operator" value="divide">
+    <label for="divide">/</label><br><br>
+
+    <button type="submit">Hisoblash</button>
+</form>
+
+<?php
 //5- masala
 if (isset($_POST['number1']) && isset($_POST['number2'])) {
     $number1 = $_POST['number1'];
     $number2 = $_POST['number2'];
 
-    if (isset($_POST['add'])) { 
+    if (isset($_POST['add'])) {
         $result = $number1 + $number2;
     } elseif (isset($_POST['minus'])) {
         $result = $number1 - $number2;
@@ -174,26 +179,27 @@ if (isset($_POST['number1']) && isset($_POST['number2'])) {
     } else {
         $result = "Noto'g'ri operator tanlandi";
     }
-} 
-?> 
+}
+?>
 
-    <form action="" method="post">
-        <input type="number" name="number1">
-        <label for="number1">First Number</label> <br><br>
+<form action="" method="post">
+    <input type="number" name="number1">
+    <label for="number1">First Number</label> <br><br>
 
-        <input type="number" name="number2">
-        <label for="number2">Secomnd Number</label> <br><br>
+    <input type="number" name="number2">
+    <label for="number2">Secomnd Number</label> <br><br>
 
-        <input type="text" name="result"value="<?php echo isset($result) ? $result : ''; ?>">
-        <label for="result"> Result </label> <br><br>
-        <div>
-            <input type="submit" name="add" id="add" value="Add">
-            <input type="submit" name="minus" id="minus" value="Minus">
-            <input type="submit" name="subtract" id="subtract" value="Subtract">
-            <input type="submit" name="multiply" id="multiply" value="multiply">
-        </div>
-    </form>
+    <input type="text" name="result" value="<?php echo isset($result) ? $result : ''; ?>">
+    <label for="result"> Result </label> <br><br>
+    <div>
+        <input type="submit" name="add" id="add" value="Add">
+        <input type="submit" name="minus" id="minus" value="Minus">
+        <input type="submit" name="subtract" id="subtract" value="Subtract">
+        <input type="submit" name="multiply" id="multiply" value="multiply">
+    </div>
+</form>
 
-    <?php 
-    // 6 - 7 -8 masalalarni ishlab qoyaman
-    ?>
+<?php
+// 6 - 7 -8 masalalarni ishlab qoyaman\
+
+?>
